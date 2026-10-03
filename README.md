@@ -16,10 +16,10 @@ code/
 data/               data files, in the folder structure the code expects
   MANIFEST.md       every data file, with size, checksum, source and which code uses it
 docs/figures/       the published main-text and Extended Data figures (PDF)
-output/             written by the code (not in the repository)
-  intermediate/     NetCDF files passed between steps
-  figure_data/      one NetCDF file per figure
-  figures/          PDF and PNG of every figure
+output/             written by the code
+  intermediate/     NetCDF files passed between steps (not in the repository)
+  figure_data/      one NetCDF file per figure (included in the repository)
+  figures/          PDF and PNG of every figure (not in the repository)
 ```
 
 ## Running the code
@@ -88,7 +88,7 @@ Third-party data used in the paper but not redistributed here:
 - ACE-FTS satellite data: https://databace.scisat.ca/ (registration required)
 - Cryo-flask balloon data (Engel et al.), WACCM, CLaMS and other collaborator-provided files: see `data/MANIFEST.md`
 
-Figure data files that contain values derived from these third-party data are produced locally by the code and are not part of this repository.
+The figure data files in `output/figure_data/` include figure-level averages and trends derived from these third-party data; please cite the original sources when using them.
 
 ## License
 
